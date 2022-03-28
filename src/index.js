@@ -143,6 +143,6 @@ app.get("/balance", verifyIfExistsAccountCPF, (request, response) => {
     return response.json(balance);
 });
 
-const port = process.env.port || 3333;
+const PORT = process.env.PORT || 3333;
 
-app.listen(port);
+app.listen(PORT);
